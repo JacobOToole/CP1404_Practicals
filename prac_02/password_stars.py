@@ -1,5 +1,4 @@
 
-
 def main():
     minimum_length = 5
 
@@ -21,4 +20,3 @@ def get_password(minimum_length):
 
 
 main()
-
