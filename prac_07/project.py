@@ -19,3 +19,12 @@ class Project:
 
     def is_completed(self):
         return self.completion_percentage == 100
+
+    def format_project(self):
+        return f"{self.name}\t{self.start_date}\t{self.priority}\t{self.cost_estimate}\t{self.completion_percentage}"
+
+    def __lt__(self, other):
+        if self.priority < other.priority:
+            return True
+        else:
+            return False
