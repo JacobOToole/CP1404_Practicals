@@ -29,3 +29,6 @@ class Guitar:
         else:
             return False
 
+    def format_guitar(self):
+        return f"{self.name},{self.year},{self.cost}"
+
