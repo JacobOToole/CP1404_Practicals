@@ -22,3 +22,13 @@ class Guitar:
 
     def is_vintage(self):
         return self.get_age() >= VINTAGE_AGE
+
+    def __lt__(self, other):
+        if self.cost < other.cost:
+            return True
+        else:
+            return False
+
+    def format_guitar(self):
+        return f"{self.name},{self.year},{self.cost}"
+
